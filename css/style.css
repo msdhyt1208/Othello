@@ -1,0 +1,255 @@
+:root{
+  --size:500px;
+  --stoneSize:80%;
+  --bodycolor: #396;
+  --bordcolor: #393;
+
+}
+body,ul,li,div,a{
+  display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  list-style: none;
+}
+
+body{ 
+
+  background-color: var(--bodycolor);
+  align-items: flex-start;
+}
+#left{
+  position: fixed;
+  top: 0;
+  left: 0;
+  flex-direction: column;
+  width: 500px;
+  /* position: relative; */
+    z-index: 1;
+}
+#bord{
+
+  background-color: var(--bordcolor);
+    width: var(--size);
+    height:var(--size);
+}
+#tarn{
+  margin-left: var(--size);
+  display: block;
+  width: calc(100% - 500px);
+  padding: 10px;
+}
+#list1{
+  z-index: 1;
+  justify-content: flex-start;
+  background-color: #eeeeee;
+  border: solid black 5px;
+  height: 50px;
+  width: 100%;
+}
+#list1 div{
+  border: solid 1px #777;
+}
+
+#tarn span{
+  font-size: 1%;
+  margin: 0 10px;
+}
+
+#tarn div div{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+#tarn #list2{
+  flex-direction: column-reverse;
+  margin-top:10px;
+  width: 100%
+}
+a:hover,#tarn li:hover{
+  scale: 0.99;
+  opacity: 0.9;
+  transition: 0.5s ease-in;
+}
+a:hover{
+  scale: 0.9;
+  opacity: 0.9;
+  transition: 1s ease-in;
+}
+#tarn li{
+  justify-content: flex-start;
+  background-color: #eeeeee;
+    width:100%;
+    height: 50px;
+    margin-bottom:10px ;
+}
+#tarn li div{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  padding: 10px;
+  border: solid #777 1px;
+}
+#waku{
+  background-color: black;
+    width: 95%;
+    height: 95%;
+}
+#masu{
+  display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 1px;
+  width: 98%;
+  height: 98%;
+}
+#masu li{
+  cursor: pointer;
+  height: 100%; width: 100%;
+    background-color: var(--bordcolor);
+}
+
+
+
+#masu li div{
+  width: var(--stoneSize);
+  height: var(--stoneSize);
+  border-radius: 50%;
+
+  box-shadow: 0 2px 0.5px rgb(12, 98, 12) ;
+}
+
+.r:hover{
+  scale: 1.1;
+  transition: 1s ;
+}
+
+.b ,.nextcolorb .r:hover{
+  background-color: black;
+  color: white;
+}
+.w,.nextcolorw .r:hover{
+  background-color: white;
+  color: black;
+}
+.r{
+  background-color: rgb(211, 133, 74);
+  scale: 0.8;
+  transition: 0.8s ;
+}
+
+
+
+
+.start .text{
+  color: black;
+  font-size: 2em;
+}
+.start a{
+  text-decoration: none;
+  background-color: #777;
+    width: var(--size);
+    height: 100px;
+    border: solid black 1px;
+    border-radius: 25%;
+    margin-top:25px ;
+  color: black;
+}
+a:hover{
+  background-color: #aaa;
+}
+@media screen and (max-width :750px){
+  body{
+    position: relative;
+  }
+  .notmenu #left{
+    opacity: 0.3;
+  }
+
+  #menubar span{
+    transition: 1s;
+  }
+  .notmenu #menubar span:nth-child(1){
+    transform: translateY(15px) rotate(45deg);
+  }
+  .notmenu #menubar span:nth-child(2){
+    display: none;
+  }
+  .notmenu #menubar span:nth-child(3){
+    transform: translateY(-10px) rotate(-45deg);
+  }
+  #tarn{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    width: 80%;
+    z-index: 1;
+  }
+
+  .menuon #tarn{
+    display: none;
+  }
+  #left{
+    align-items: flex-start;
+  }
+  #menubar{ 
+    position: absolute;
+      top: 0;
+      right: 0;
+      left:var(--size);
+      margin: 0 auto;
+      z-index: 5;
+    background-color: #aaa;
+    width: 50px;
+    height: 50px;
+    border: double 2px brown;
+    border-radius: 20%;
+  }
+  #menubar:hover{
+    background-color: #ddd;
+  }
+  #menubar span{
+    width: 80%;
+    height: 1px;
+    background-color: #111;
+  }
+  
+}  
+@media screen and (max-width :550px){
+  :root{
+    --size: 90vw;
+  }
+  #menubar{
+    width: 10vw;
+    height: 10vw;
+   }
+
+  
+
+
+
+
+}
+
+/* .r{
+  position: relative;
+  background-color: black;
+  animation-name: daisyou;
+  animation-delay: 0s;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes daisyou{
+  0%{
+    opacity:1;
+  }
+  50%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+} */
