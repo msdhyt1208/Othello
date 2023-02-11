@@ -161,12 +161,12 @@ li .r{
 
   #tarn{
     position: absolute;
-    top: 75px;
+    top: 0px;
     margin: auto;
     width: var(--size);
     z-index: 1;
   }
-  .menuon #tarn{
+  .menuon #tarn #before-stones{
     display: none;
   }
 }  
