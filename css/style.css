@@ -113,6 +113,9 @@ li .r{
   #bord{
     margin: auto ;
   }
+  #tarn{
+
+  }
   #menubar{
     position: relative;
       margin: 15px 0 15px auto;
@@ -155,7 +158,8 @@ li .r{
 
   #tarn{
     position: absolute;
-    top: 0px;
+    top: 25px;
+    padding-right: 10%;
     width: var(--size);
     z-index: 1;
   }
