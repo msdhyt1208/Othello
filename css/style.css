@@ -110,7 +110,7 @@ li .r{
 
 @media screen and (max-width :750px){
   :root{
-  --size:100vw;
+    --size:100vw;
   }
   body{
     flex-direction: column-reverse;
@@ -136,6 +136,9 @@ li .r{
     width: 50%;
     height: 1px;
     background-color: #1e1e1e;
+  }
+  #tarn{
+    width: var(--size);
   }
 
   #menubar span:nth-child(1){
