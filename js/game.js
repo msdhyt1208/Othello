@@ -13,8 +13,7 @@ const list = {
     return color;
   },
   kifu:function(row,colmun,tarn){
-    $("#list2").append("<li><span>tarn "+tarn+" ⇒　["+(row+1)+"."+(colmun+1)+"] </span><div class="+color+"></div><span>  です。</span></li>");
-    $("#list2").append
+    $("#before-stones").append("<li class=><span>tarn "+tarn+" ⇒　["+(row+1)+"."+(colmun+1)+"] </span><div class="+color+"></div><span>  です。</span></li>");
   }
 }
   
