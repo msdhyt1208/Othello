@@ -110,7 +110,7 @@ li .r{
 
 @media screen and (max-width :750px){
   :root{
-    --size:100vw;
+    --size:90vw;
   }
   body{
     flex-direction: column-reverse;
