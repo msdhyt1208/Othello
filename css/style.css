@@ -137,10 +137,6 @@ li .r{
     height: 1px;
     background-color: #1e1e1e;
   }
-  #tarn{
-    width: var(--size);
-  }
-
   #menubar span:nth-child(1){
     top: 25%;
   }
@@ -167,7 +163,7 @@ li .r{
     position: absolute;
     top: 75px;
     margin: auto;
-    width: 100%;
+    width: var(--size);
     z-index: 1;
   }
   .menuon #tarn{
